@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Jost:wght@400;500;600&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800;900&display=swap");
 .container {
   max-width: 1264px !important;
 }
-
+.font-jost{
+  font-family: 'Jost', sans-serif;
+}
+.text-orange{
+  color: #fc642d;
+}
+.border-bottom-5px{
+  border-bottom: 5px solid #fc642d;
+}
+.term-text{
+  padding-left: 93px;
+    padding-top: 65px;
+}
+.section-emi .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #faf8f4;
+  margin-top: 20px;
+  border-radius: 20px;
+}
 header {
   background: #ffffff;
 }
@@ -28,16 +49,21 @@ header nav .nav-content a {
 }
 header nav .nav-content button {
   padding: 16px 24px;
-  background: #fc642d;
+  background: transparent;
   border-radius: 50px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
-  color: #ffffff;
-  border: 0px;
+  color: #fc642d;
+  border: 1px solid #fc642d;
   margin: auto 0px;
+  transition: 300ms ease-in-out;
+}
+header nav .nav-content button:hover {
+  color: white;
+  background-color: #fc642d;
 }
 
 .section1 {
@@ -60,6 +86,24 @@ header nav .nav-content button {
 .section1 .sec1-content {
   padding-top: 31px;
   padding-left: 59px;
+}
+.section1 .sec1-content button {
+  padding: 16px 24px;
+  border: 1px solid #fc642d;
+  border-radius: 50px;
+  margin-top: 40px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: transparent;
+  line-height: 14px;
+  color: #fc642d;
+  transition: 300ms ease-in-out;
+}
+.section1 .sec1-content button:hover {
+  color: white;
+  background-color: #fc642d;
 }
 .section1 .sec1-content h2 {
   font-family: "Inter";
@@ -152,10 +196,18 @@ header nav .nav-content button {
   border: 1px solid #dddddd;
   border-radius: 8px;
   margin-bottom: 24px;
+  overflow: hidden;
 }
-.section2 .sec2-box img{
-width: 100%;
-height: 299.35px;
+.section2 .sec2-box:hover img {
+  transform: scale(1.1);
+}
+.section2 .sec2-box .sec2-box-img {
+  overflow: hidden;
+}
+.section2 .sec2-box img {
+  width: 100%;
+  height: 299.35px;
+  transition: 300ms ease-in;
 }
 .section2 .sec2-box .sec2-box-content {
   display: flex;
@@ -185,10 +237,33 @@ height: 299.35px;
   font-size: 14px;
   line-height: 14px;
   color: #fc642d;
+  transition: 300ms ease-in-out;
+}
+.section2 .sec2-box .sec2-box-content button:hover {
+  color: white;
+  background-color: #fc642d;
 }
 
 .section3 {
   padding-top: 34px;
+}
+.section3 button ,.web-btn{
+  padding: 16px 24px;
+  border: 1px solid #fc642d;
+  border-radius: 50px;
+  background-color: transparent;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fc642d;
+  margin-top: 40px;
+  transition: 300ms ease-in-out;
+}
+.section3 button:hover {
+  color: white;
+  background-color: #fc642d;
 }
 .section3 .container {
   background: #f3f9fc;
@@ -199,13 +274,13 @@ height: 299.35px;
   display: flex;
 }
 .section3 .sec3-box img {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 .section3 .sec3-box h3 {
   font-family: "DM Serif Display", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 30px;
   color: #222222;
 }
@@ -213,7 +288,7 @@ height: 299.35px;
   font-family: "Inter", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 11px;
   line-height: 22px;
   letter-spacing: 0.01em;
   color: #767676;
@@ -349,12 +424,24 @@ height: 299.35px;
   color: #fc642d;
   background: transparent;
   margin-top: 18px;
+  transition: 300ms ease-in-out;
+}
+.section5 button:hover {
+  color: white;
+  background-color: #fc642d;
 }
 .section5 a {
   text-decoration: none;
 }
 .section5 .sec5-box {
   margin-bottom: 24px;
+  overflow: hidden;
+}
+.section5 .sec5-box:hover img {
+  transform: scale(1.1);
+}
+.section5 .sec5-box img {
+  transition: 300ms ease-in-out;
 }
 .section5 .sec5-box h3 {
   font-family: "DM Serif Display", serif;
@@ -393,6 +480,9 @@ footer .footer-content .details a {
   text-decoration: none;
   margin-right: 32px;
 }
+footer .footer-content .details a:hover {
+  color: #fc642d;
+}
 footer .footer-content .details a img {
   margin-bottom: 0px;
   margin-right: 8px;
@@ -407,6 +497,10 @@ footer .footer-content .social-media img {
   background: #fc642d;
   padding: 18px 0px;
 }
+.disclaimer a{
+  color:white;
+  text-decoration: none;
+}
 .disclaimer h1 {
   text-align: center;
   margin-bottom: 0px;
@@ -419,6 +513,33 @@ footer .footer-content .social-media img {
 }
 
 @media only screen and (min-width: 200px) and (max-width: 576px) {
+  .section-emi h4{
+    font-size: 14px;
+  }
+  .section-emi p{
+    font-size: 8px;
+  }
+  .bajaj-img img {
+    width: 28%;
+  }
+  .term-text {
+    padding-left: 200px;
+    padding-top: 0px;
+}
+  .emi-logo img{
+    width: 60%;
+    margin: 0px;
+    margin-right: 0px !important;
+  }
+  .section-emi .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #faf8f4;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 13px;
+}
   .sm-none {
     display: none !important;
   }
@@ -471,6 +592,14 @@ footer .footer-content .social-media img {
   .section3 .sec3-box {
     margin: 12px 0px;
   }
+  .section3 .sec3-box h3 {
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #222222;
+}
   .section4 {
     margin-top: 60px;
   }
